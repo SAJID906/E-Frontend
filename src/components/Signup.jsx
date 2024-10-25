@@ -19,7 +19,7 @@ function Signup() {
         return setSignupResponse("please fill out All fildes");
       }
       const Response = await axios.post(
-        "http://localhost:5000/signup",
+        "https://e-backendappi.vercel.app/signup",
         signupdata
       );
       console.log("check Signup backend response", Response);
